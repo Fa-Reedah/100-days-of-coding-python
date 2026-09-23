@@ -31,6 +31,8 @@ start_game = True
 while start_game:
     screen.update()
     time.sleep(0.1)
+    #Create Snake
+
     #Move Snake
     snake.move_snake()
 
@@ -46,15 +48,17 @@ while start_game:
     #Detect collision with wall
     #if head collides with near wall
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
-        #trigger game over
-        score.game_over()
-        start_game = False
+        #trigger reset
+        snake.reset()
+        score.reset_score()
+
 
     #Detect collision with tail
     for body in snake.snake_body[1:]:
         if snake.head.distance(body) < 10:
-            # trigger game over
-            score.game_over()
-            start_game = False
+            # trigger reset
+            snake.reset()
+            score.reset_score()
+ 
 
 screen.exitonclick()
