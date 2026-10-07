@@ -15,6 +15,7 @@
       <excludeFolder url="file://$MODULE_DIR$/DAY23/CrossRoad/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/DAY23/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/DAY24/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/DAY3/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12 (MY100DAYSCODE)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
